@@ -29,6 +29,9 @@ class NetworkDevice:
             print("Diospositivo: <" 
                 + str(mi_name) + "> | IP: <" + mi_ip_address + "> | Tipo: <"
                 + str(mi_device_type) + ">")
+
+    def pingTest(self):
+        print("Realizando ping al dispositivo <" + self.name + ">...")
 dev1= NetworkDevice("Router1","10.0.0.1","Router")
 dev2= NetworkDevice("Switch","10.0.0.2","Switch")
 dev3= NetworkDevice("Firewall","10.0.0.3","Firewall")
